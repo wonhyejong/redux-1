@@ -1,0 +1,27 @@
+redux 자바스크립트 라이브러리  
+react-redux  
+
+Redux Toolkit 
+
+리덕스
+https://ko.redux.js.org/introduction/getting-started/
+전역상태를 관리하는 라이브러리  
+
+스토어 :  전역으로 관리할 스테이트 값이 저장 되는 곳 
+액션(action)  상태에 변화가 필요할 때 발생시키는 객체 {type;'increment' , payload:'2'}
+
+액션 생성함수 : action creator 
+컴포넌트에서 더 쉽게 액션 발생시키기 위한 함수 , 필수는 아님 
+increment = () => {type:'increment'} 
+
+디스패치 (dispatch) 액션을 리듀서에 집어넣는 행위  / 변화를 요청하는 행위 
+useDispatch Hook 을 사용해서 디스패치 한다. 
+
+리듀서 (Reducer) 상태변화를 일으키는 함수 
+현재상태와 액션을 참조해서 새로운 상태를 반환 (리턴)
+
+스토어 (Store) 하나의 프로젝트에 하나의 스토어를 사용한다. 
+전역 state가 저장되어 있다. 
+
+구독 (subscribe)
+useSelector Hook 을 사용하여 컴포넌트에서 구독해 온다. (컴포넌트는 store 에서 값을 가져 오려면 useSelector Hook)
